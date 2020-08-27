@@ -17,4 +17,4 @@ client.on("message", async message => {
 client.on("ready", () => require("./handlers/events/ready.js")(client));
 client.on("messageReactionAdd", async (reaction, user) => require("./handlers/events/reactionAddRps.js")(client, reaction, user));
 
-client.login(config.token);
+client.login(process.env.TOKEN);
