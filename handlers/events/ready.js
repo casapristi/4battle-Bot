@@ -1,0 +1,1 @@
+module.exports = (client) => console.log("[=========================================]\n   [LOGS] le bot est à présent en ligne.\n[=========================================]");

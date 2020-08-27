@@ -1,0 +1,19 @@
+const { MessageEmbed, MessageAttachment } = require("discord.js");
+const color = require("../../json/color.json");
+const config = require("../../json/config.json");
+const fs = require("fs");
+
+module.exports = {
+    name: "",
+    aliases: [""],
+    category: "",
+    run: async (client, message, args) => {
+        let language = JSON.parse(fs.readFileSync("./json/data/language.json", "utf8"));
+
+        if(!language[message.guild.id] || language[message.guild.id].language === "english") {
+
+        } else if(language[message.guild.id].language === "french") {
+
+        };
+    }
+};
