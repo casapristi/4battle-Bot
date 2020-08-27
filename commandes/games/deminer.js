@@ -15,7 +15,7 @@ module.exports = {
 
         let language = JSON.parse(fs.readFileSync("./json/data/language.json", "utf8"));
 
-        let emoji = ["||:emoji[0]:||","||:one:||","||:two:||","||:three:||","||:four:||","||:five:||","||:boom:||"];
+        let emoji = ["||🟦||","||:one:||","||:two:||","||:three:||","||:four:||","||:five:||","||:boom:||"];
         let l1 = [emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0]];
         let l2 = [emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0]];
         let l3 = [emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0]];
@@ -27,7 +27,7 @@ module.exports = {
         let l9 = [emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0],emoji[0]];
         let c = [l1,l2,l3,l4,l5,l6,l7,l8,l9];
         function upBlock(x,y){
-            let tier1 = ["||:emoji[0]:||","||:one:||","||:two:||","||:three:||","||:four:||","||:five:||","||:boom:||"];
+            let tier1 = [emoji[0],"||:one:||","||:two:||","||:three:||","||:four:||","||:five:||","||:boom:||"];
             let tier2 = ["||:one:||","||:two:||","||:three:||","||:four:||","||:five:||","||:six:||","||:boom:||"];
             if (x >= 0 && x <= 8 && y >= 0 && y <= 8) {
                 for(i=0;i<7;i++) {
